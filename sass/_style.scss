@@ -25,3 +25,20 @@
 		border: 4px solid white;
 	}
 }
+
+.contenido-about {
+	padding: 5% 0;
+	&__cont-perfil {
+		display: inline-block;
+		&--profile {
+			border-radius: 50%;
+			width: 250px;
+		}
+	}
+	&__cont-perfil--info {
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
