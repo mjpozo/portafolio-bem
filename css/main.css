@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  width: 60%;
+  margin-left: 20%; }
+
+.respons {
+  max-width: 100%;
+  width: 100%; }
+
+.mi-nav {
+  background-color: #f04949;
+  padding-bottom: 4%; }
+
+.mi-ul__link {
+  display: inline-block;
+  width: 19%;
+  text-align: center; }
+  .mi-ul__link__a {
+    text-decoration: none;
+    color: white; }
+  .mi-ul__link__a.profile {
+    padding: 6% 13%;
+    background-color: #203748;
+    border-radius: 15px; }
+  .mi-ul__link__photo {
+    width: 60px;
+    position: relative;
+    top: 23px;
+    border-radius: 50%;
+    border: 4px solid white; }
+
+/*# sourceMappingURL=main.css.map */
