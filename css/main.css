@@ -4,8 +4,7 @@
 
 body {
   padding: 0;
-  margin: 0;
-  background-color: #203748; }
+  margin: 0; }
 
 .container {
   width: 60%;
@@ -18,8 +17,10 @@ body {
 
 [class*="col-"] {
   min-height: 7px;
+  max-height: 100%;
   padding: 12px;
   margin: 0;
+  box-sizing: border-box;
   float: left; }
 
 .col-1 {
@@ -80,17 +81,85 @@ body {
     border-radius: 50%;
     border: 4px solid white; }
 
-.contenido-about {
+.about {
+  background-color: #203748; }
+
+.cont-about {
   padding: 5% 0; }
-  .contenido-about__cont-perfil {
+  .cont-about__cont-perfil {
     display: inline-block; }
-    .contenido-about__cont-perfil--profile {
+    .cont-about__cont-perfil--profile {
       border-radius: 50%;
       width: 250px; }
-  .contenido-about__cont-perfil--info {
+  .cont-about__cont-perfil__info {
     height: 250px;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .cont-about__cont-perfil__info--verde {
+      color: #39d084; }
+    .cont-about__cont-perfil__info--blanco {
+      color: white; }
+    .cont-about__cont-perfil__info__btn {
+      width: 40%; }
+      .cont-about__cont-perfil__info__btn--color {
+        background-color: #39d084;
+        color: white;
+        padding: 2% 0;
+        border: 1px solid #39d084;
+        border-radius: 15px; }
+
+.btn-social-network, .social-networks__links--facebook, .social-networks__links--twitter, .social-networks__links--google, .social-networks__links--pinterest, .social-networks__links--stumbleupon, .social-networks__links--dribbble {
+  color: white;
+  font-size: 150%;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px; }
+
+.social-networks {
+  padding-top: 23%;
+  padding-bottom: 5%; }
+  .social-networks__links {
+    display: inline-block;
+    width: 15%; }
+    .social-networks__links--facebook {
+      background-color: #365899;
+      border: 1px solid #365899; }
+    .social-networks__links--twitter {
+      background-color: #3aa4d2;
+      border: 1px solid #3aa4d2; }
+    .social-networks__links--google {
+      background-color: #c2594e;
+      border: 1px solid #c2594e; }
+    .social-networks__links--pinterest {
+      background-color: #ba323b;
+      border: 1px solid #ba323b; }
+    .social-networks__links--stumbleupon {
+      background-color: #c55236;
+      border: 1px solid #c55236; }
+    .social-networks__links--dribbble {
+      background-color: #cc6a93;
+      border: 1px solid #cc6a93; }
+
+.portfolio {
+  background-color: #f04949;
+  height: 190vh;
+  padding: 4% 0; }
+
+.cont-portfolio {
+  height: auto; }
+  .cont-portfolio h1 {
+    font-size: 200%;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%; }
+  .cont-portfolio__div {
+    padding: 0 10px; }
+    .cont-portfolio__div__img {
+      margin: 2px;
+      border-radius: 10px;
+      border: 5px solid #203748; }
 
 /*# sourceMappingURL=main.css.map */

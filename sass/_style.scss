@@ -14,7 +14,7 @@
 	}
 	&__a.profile {
 		padding: 6% 13%;;
-		background-color: $color_fondo_body;
+		background-color: $color_fondo_profile;
 		border-radius: 15px;
 	}
 	&__photo {
@@ -26,7 +26,11 @@
 	}
 }
 
-.contenido-about {
+.about {
+	background-color: $color_fondo_profile;
+}
+
+.cont-about {
 	padding: 5% 0;
 	&__cont-perfil {
 		display: inline-block;
@@ -35,10 +39,99 @@
 			width: 250px;
 		}
 	}
-	&__cont-perfil--info {
+	&__cont-perfil__info {
 		height: 250px;
+		padding: 0 5%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		&--verde {
+			color: $color_verde;
+		}
+		&--blanco {
+			color: white;
+		}
+		&__btn {
+			width: 40%;
+			&--color {
+				background-color: $color_verde;
+				color: white;
+				padding: 2% 0;
+				border: 1px solid $color_verde;
+				border-radius: 15px;
+			}
+		}
+	}
+}
+
+.btn-social-network {
+	color: white;
+	font-size: 150%;
+	width: 38px;
+	height: 38px;
+	border-radius: 4px;
+}
+
+.social-networks {
+	padding-top: 23%;
+	padding-bottom: 5%;
+	&__links {
+		display: inline-block;
+		width: 15%;
+		&--facebook {
+			background-color: $color_facebook;
+			border: 1px solid $color_facebook;
+			@extend .btn-social-network;
+		}
+		&--twitter {
+			background-color: $color_twitter;
+			border: 1px solid $color_twitter;
+			@extend .btn-social-network;
+		}
+		&--google {
+			background-color: $color_google;
+			border: 1px solid $color_google;
+			@extend .btn-social-network;
+		}
+		&--pinterest {
+			background-color: $color_pinterest;
+			border: 1px solid $color_pinterest;
+			@extend .btn-social-network;
+		}
+		&--stumbleupon {
+			background-color: $color_stumbleupon;
+			border: 1px solid $color_stumbleupon;
+			@extend .btn-social-network;
+		}
+		&--dribbble {
+			background-color: $color_dribbble;
+			border: 1px solid $color_dribbble;
+			@extend .btn-social-network;
+		}
+	}
+}
+
+.portfolio {
+	background-color: $color_fondo_nav;
+	height: 190vh;
+	padding: 4% 0;
+}
+
+.cont-portfolio {
+	height: auto;
+	h1 {
+		font-size: 200%;
+		font-weight: 900;
+		text-align: center;
+		color: white;
+		margin-bottom: 5%;
+	}
+	&__div {
+		padding: 0 10px;
+		&__img {
+			margin: 2px;
+			border-radius: 10px;
+			border: 5px solid $color_fondo_profile;
+		}
 	}
 }
